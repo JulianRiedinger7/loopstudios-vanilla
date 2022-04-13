@@ -1,0 +1,435 @@
+:root{
+    --dark-gray: hsl(0, 0%, 55%);
+    --very-dark-gray: hsl(0, 0%, 41%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Alata', sans-serif;
+}
+
+header{
+    background-image: url(../images/mobile/image-hero.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-items: flex-start;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; 
+    padding-top: 2rem;
+}
+
+
+.hero-box{
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid white;
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+h1,h2,h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: .1rem;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.interactive{
+    padding-top: 2rem;
+}
+
+.interactive-text{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+h2{
+    font-size: 1.7rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+p{
+    width: 80%;
+    margin: 0 auto;
+    color: var(--dark-gray);
+}
+
+.creations{
+    padding-top: 4rem;
+    text-align: center;
+    
+}
+
+.grid-creations{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+}
+
+h3{
+    font-size: 1.7rem;
+}
+
+.creations-box{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    padding: 3.5rem 1rem 1rem 1rem;
+    color: white;
+    transition: 1s;
+}
+
+.creations-box:hover{
+    opacity: .5;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.creations-box:nth-child(1){
+    background-image: url(../images/mobile/image-deep-earth.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.creations-box:nth-child(2){
+    background-image: url(../images/mobile/image-night-arcade.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.creations-box:nth-child(3){
+    background-image: url(../images/mobile/image-soccer-team.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.creations-box:nth-child(4){
+    background-image: url(../images/mobile/image-grid.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.creations-box:nth-child(5){
+    background-image: url(../images/mobile/image-from-above.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.creations-box:nth-child(6){
+    background-image: url(../images/mobile/image-pocket-borealis.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.creations-box:nth-child(7){
+    background-image: url(../images/mobile/image-curiosity.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.creations-box:nth-child(8){
+    background-image: url(../images/mobile/image-fisheye.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.creations-btn{
+    padding: .5rem 2rem .5rem 2rem;
+    border: 1px solid black;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .3rem;
+    display: inline-block;
+    margin-top: 2rem;
+    transition: 1s;
+}
+
+.creations-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+footer{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.footer-list{
+    list-style-type: none;
+}
+
+.footer-logo{
+    width: 40%;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-links,
+.media-links{
+    color: white;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.footer-links:hover,
+.media-links:hover{
+    border-bottom: 2px solid white;
+    
+}
+
+.footer-li{
+    padding-bottom: 1rem;
+}
+
+.footer-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    gap: 1rem;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 375px){
+    .hero-box{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    header{
+        background-image: url(../images/desktop/image-hero.jpg);
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .hidden{
+        display: block;
+    }
+
+    .desktop-hidden{
+        display: none;
+    }
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    nav{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .nav-list{
+        display: flex;
+        gap: 1rem;
+        list-style-type: none;
+        font-size: 1.1rem;
+    }
+
+    .nav-links{
+        color: white;
+        text-decoration: none;
+        transition: .5s;
+    }
+
+    .nav-links:hover{
+        border-bottom: 2px solid white;
+        
+    }
+
+    .hero-box{
+        width: 70%;
+        margin: 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .hero-break{
+        display: none;
+    }
+
+    .interactive{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .interactive-text{
+        text-align: left;
+        background: white;
+        align-self: flex-end;
+        width: 150%;
+        max-height: 280px;
+        transform: translateX(-10rem);
+        padding: 3rem 0rem 1rem 5rem;
+    }
+
+    p{
+        width: 100%;
+        margin: 0;
+    }
+
+    .creations{
+        text-align: left;
+    }
+
+    h2{
+        font-size: 1.7rem;
+    }
+
+    .creations-title{
+        padding: 4rem 0 3rem 0;
+    }
+
+    .creations-flex-desktop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .creations-btn{
+        margin-top: 0;
+    }
+
+    .grid-creations{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2, 600px);
+        gap: 1.5rem;
+    }
+
+    .creations-box{
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 4rem;
+    }
+
+    .creations-box:nth-child(1){
+        background-image: url(../images/desktop/image-deep-earth.jpg);
+    }
+    
+    .creations-box:nth-child(2){
+        background-image: url(../images/desktop/image-night-arcade.jpg);
+    }
+    
+    .creations-box:nth-child(3){
+        background-image: url(../images/desktop/image-soccer-team.jpg);
+    }
+    
+    .creations-box:nth-child(4){
+        background-image: url(../images/desktop/image-grid.jpg);
+    }
+    
+    .creations-box:nth-child(5){
+        background-image: url(../images/desktop/image-from-above.jpg);
+    }
+    
+    .creations-box:nth-child(6){
+        background-image: url(../images/desktop/image-pocket-borealis.jpg);
+    }
+    
+    .creations-box:nth-child(7){
+        background-image: url(../images/desktop/image-curiosity.jpg);
+    }
+    
+    .creations-box:nth-child(8){
+        background-image: url(../images/desktop/image-fisheye.jpg);
+    }
+
+    footer{
+        text-align: left;
+    }
+
+    .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .footer-list{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .footer-li{
+        padding-bottom: 0;
+    }
+
+    .media-container{
+        justify-self: flex-end;
+        align-self: center;
+    }
+
+    .footer-media{
+        justify-content: flex-end;
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px){
+    .hero-box{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .interactive-text{
+        width: 100%;
+    }
+}
+
